@@ -4,4 +4,4 @@
 *.iml
 target
 
-src/main/scala/com/ralspaugh/learning/scala/rest/client/AuthenticatedClient.scala
+/src/main/scala/com/ralspaugh/learning/scala/rest/client/AuthenticatedClient.scala
