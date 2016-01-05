@@ -12,7 +12,7 @@ object FoursquareHttpRestClient extends AuthenticatedClient {
 
   def getTastyLunchSpot(query: String, longitude: String, latitude: String): String = {
 
-    val url = s"https://api.foursquare.com/v2/venues/explore?ll=$longitude,$latitude&query=$query&section=food&limit=1&client_id=$clientId&client_secret=$clientSecret&v=20160105"
+    val url = s"https://api.foursquare.com/v2/venues/explore?ll=$longitude,$latitude&query=$query&limit=1&client_id=$clientId&client_secret=$clientSecret&v=20160105"
 
     val method = new GetMethod(url)
 
@@ -23,6 +23,7 @@ object FoursquareHttpRestClient extends AuthenticatedClient {
 
       method.getResponseBodyAsString
     } catch {
+      // TODO: Improve exception handling
       case e: HTTPException =>
         println(e.getMessage)
         null
