@@ -1,5 +1,7 @@
 .idea
 .m2
+.DS_Store
 *.iml
 target
-AuthenticatedClient.scala
+
+src/main/scala/com/ralspaugh/learning/scala/rest/client/AuthenticatedClient.scala
