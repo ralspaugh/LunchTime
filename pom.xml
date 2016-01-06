@@ -7,6 +7,7 @@
   <properties>
     <scala.version>2.11.7</scala.version>
     <commons-httpclient.version>3.1</commons-httpclient.version>
+    <json4s.version>3.3.0</json4s.version>
   </properties>
 
   <repositories>
@@ -35,6 +36,11 @@
       <groupId>commons-httpclient</groupId>
       <artifactId>commons-httpclient</artifactId>
       <version>${commons-httpclient.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.json4s</groupId>
+      <artifactId>json4s-native_2.11</artifactId>
+      <version>${json4s.version}</version>
     </dependency>
   </dependencies>
 
